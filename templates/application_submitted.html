@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Application Submitted</title>
+  {% include 'bootstrap.html' %}
+</head>
+<body>
+  {% include 'nav.html' %}
+  {% include 'banner.html' %}
+  <div class="container">
+    <h1 class="text-center mt-2 mb-4">Jovian Careers</h1><br>
+    <p style="text-align:center;">Your Application for the job titled "{{ job[0].title }}" has been Submitted Successfully!</p><br>
+    <h4> Full Name </h4>
+    <div> {{ application['full_name'] }} </div>
+    
+    <h4> Email </h4>
+    <div> {{ application['email'] }} </div>
+    
+    <h4> LinkedIn URL </h4>
+    <div> {{ application['linkedin_url'] }} </div>
+    
+    <h4> Education </h4>
+    <div> {{ application['education'] }} </div>
+    
+    <h4> Work Experience </h4>
+    <div> {{ application['work_experience'] }} </div>
+    
+    <h4> Resume URL </h4>
+    <div> {{ application['resume_url'] }} </div>
+  </div>
+</body>
+</html>
